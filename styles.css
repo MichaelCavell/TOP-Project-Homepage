@@ -1,0 +1,71 @@
+* {
+    border: 1px red solid;
+}
+
+h1 {
+    margin: 0px;
+}
+
+#container, body, html {
+    margin: 0px;
+}
+
+#header-photo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: white;
+}
+
+#header-photo {
+    background-image: url(./img/BlurryWalking.jpeg);
+    min-height: 400px;
+    width: auto;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects {
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+}
+
+.project-div {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    align-items: stretch;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0px;
+}
+
+.screenshot {
+    background-color: red;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-info {
+    display: flex;
+    justify-content: center;
+}
+

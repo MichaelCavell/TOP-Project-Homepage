@@ -1,179 +1,404 @@
-
-
-h1 {
+* {
     margin: 0px;
     font-family: 'Playfair Display', serif;
-    font-size: 3em;
 }
 
-div {
-    font-size: 1em;
+p {
     font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
 }
 
-#container, body, html {
-    margin: 0px;
-}
-
-#header-photo-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: white;
-    background-color: transparent;
-    position: relative;
-}
-
-#header-photo-container::after {
-    content: '';
-    background-color: #3498db;
-    position: absolute;
-    inset: 0; 
-    transform: skewY(-30deg) translate(0px, -180px);
-    z-index: -1;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-}
-
-
-#header-photo {
-    background-image: url(./img/BlurryWalking.jpeg);
-    min-height: 400px;
-    width: auto;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 35px;
-    padding-right: 35px;
-}
-
-.logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 5px
-}
-
-i {
-    font-size: 18px;
-    justify-self: center;
-    align-self: center;
-}
-
-#projects {
-    display: grid;
-    justify-items: center;
-    padding: 40px;
-    gap: 40px;
-}
-
-.project-div {
-    display: flex;
-    flex-direction: column;
-    justify-items: start;
-    align-items: stretch;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+h1 {
+    font-size: 4rem;
 }
 
 h2 {
-    margin: 0px;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.draw {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+div.rectangle {
+    height: 300px;
+    background-color: teal;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    border: 0;
+}
+
+div.triangle {
+    border-top: 10vh solid teal;
+    border-left: 0vw solid teal;
+    border-right: 100vw solid transparent;
+    border-bottom: 0vh solid transparent;
+    filter: drop-shadow(-16px 6px 3px rgba(0, 0, 0, .5));
+}
+
+.image {
+    background-image: url(./img/BlurryWalking.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    min-width: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+}
+
+.image h1 {
+    text-shadow: 0 5px 5px rgba(0, 0, 0, .5); 
+}
+
+.about-wrapper {
+    border: 40px transparent solid;
+}
+
+.about {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 2em;
+}
+
+.about h2 {
+    padding-bottom: 15px;
+}
+
+.about p {
+    text-align: start;
+}
+
+main {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+main h2 {
+    text-align: center;
+    padding: 30px;
+}
+
+.logos {
+    padding-top: 15px;
+}
+
+i {
+    font-size: 24px;
+    padding: 5px;
+}
+
+.projects-container {
+    display: grid;
+    padding: 15px;
+    gap: 35px;
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-div {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    display: grid;
 }
 
 .screenshot {
-    background-color: red;
+    background-color: blue;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#one .screenshot {
+    background-color: blue;
+}
+
+#two .screenshot {
+    background-color: red;
+}
+
+#three .screenshot {
+    background-color: black;
+}
+
+#four .screenshot {
+    background-color: green;
+}
+
+#five .screenshot {
+    background-color: darkgoldenrod;
+}
+
+#six .screenshot {
+    background-color: lightpink;
+}
+
+#one .screeshot {
+    background-color: blue;
+}
+
+.project-description, .project-info {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .project-info {
     display: flex;
-    padding: 10px;
+    justify-content: start;
     align-items: center;
-    justify-content: space-around;
 }
 
-.project-info div {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.25em;
-}
-
-#logo-container {
+.project-info .logos {
+    padding: 0px;
     display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 140px;
 }
 
-#logo-container i {
-    margin-right: 10px;
+.logos i {
+    margin-right: 5px
 }
 
 .project-description {
-    padding: 10px;
-    margin-bottom: 50px;
-    font-size: 1em;
+    padding-bottom: 50px;
 }
 
-#div-two {
-    background-color: blueviolet;
+footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
-#div-three {
-    background-color: green;
-}
-
-#footer {
-    background-color: #3498db;
-}
-
-#contact {
-    background-color: #3498db;
+.contact {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: teal;
     color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h3 {
     padding: 15px;
-    display: grid;
-    gap: 20px;
-    padding-bottom: 60px;
+    font-family: 'Roboto', sans-serif;
 }
 
-#contact h3 {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.5em;
+.digital-contact svg {
+    fill: white;
+    padding-right: 10px;
+    display: none;
 }
 
-#footer-photo {
-    background-image: url(./img/BlurryWalking.jpeg);
-    min-height: 200px;
-    width: auto;
-    background-size: cover;
-    background-position-x: 0px;
-    background-position-y: -110px;
-}
-
-#footer .logos {
+.phone {
     display: flex;
 }
 
-#footer i {
-    font-size: 48px;
-    margin: 10px;
+.e-mail {
+    display: flex;
+}
+
+.image-div {
+    width: 100%;
+    min-height: 400px;
+    background-image: url(./img/BlurryWalking.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.address, .digital-contact {
+    text-align: start;
+    margin-top: 15px;
+}
+
+.contact-details .logos {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .image-container {
+        float: left;
+    }
+
+    .image {
+        background-color: blue;
+        min-height: 350px;
+        min-width: 300px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        color: white;
+        display: flex;
+        align-items: start;
+        justify-content: end;
+    }
+
+    .image-name {
+        display: flex;
+        margin-right: -350px;
+        margin-top: 0px;
+    }
+    
+    .image h1 {
+        text-shadow: 0 5px 5px rgba(0, 0, 0, .5); 
+        margin-right: 10px;
+    }
+
+    .about-wrapper {
+        border: 40px transparent solid;
+        border-top: 120px transparent solid;
+        border-right: 60px transparent solid;
+        border-left: 60px transparent solid;
+    }
+
+    .about {
+        background-color: white;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+        padding: 30px;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+    }
+
+    .about h2 {
+        text-align: center;
+    }
+
+    .about .logos {
+        display: none;
+    }
+
+    .projects-container {
+        display: grid;
+        padding: 15px;
+        gap: 35px;
+        background-color: white;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .project-info .logos {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-left: 140px;
+    }
+
+    footer {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 60px;
+        background-color: teal;
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .contact h3 {
+        padding-left: 0px;
+    }
+
+    .digital-contact svg {
+        fill: white;
+        padding-right: 10px;
+        display: block;
+    }
+
+    .image-div {
+        width: 100%;
+        min-height: 400px;
+        background-image: url(./img/BlurryWalking.jpeg);
+        background-position: center;
+        background-size: cover;
+        border: solid teal 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .image {
+        background-color: blue;
+        min-height: 450px;
+        min-width: 400px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 10px;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .image-name {
+        display: flex;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    
+    .image h1 {
+        text-shadow: 0 5px 5px rgba(0, 0, 0, .5); 
+        margin-right: 10px;
+    }
+
+    .about h2 {
+        text-align: start;
+    }
+    
+    main {
+        clear: both;
+        margin-top: 200px;
+    }
+
+    main h2 {
+        text-align: start;
+        padding: 30px;
+    }
+
+    .image-div {
+        width: 100%;
+        min-height: 800px;
+        background-image: url(./img/BlurryWalking.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
 }

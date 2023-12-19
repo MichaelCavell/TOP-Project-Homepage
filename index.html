@@ -3,104 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Homepage</title>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <div id="header-photo-container">
-                <div id="header-photo">
-                    <div id="name-container">
-                        <h1>Michael</h1>
-                        <h1>Cavell</h1>
-                    </div>
+    <div class="draw">
+        <div class="rectangle"></div>
+        <div class="triangle"></div>
+    </div>
+    <header>
+        <div class="image-container">
+            <div class="image">
+                <div class="image-name">
+                    <h1>Michael</h1>
+                    <h1>Cavell</h1>
                 </div>
             </div>
-            <div id="about-section">
-                <h1>About</h1>
-                <div id="about">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
+        </div>
+        <div class="about-wrapper">
+            <div class="about">
+                <h2>About me</h2>
+                <p>
+                    I am a highly motivated individual with a profound passion for software 
+                    engineering and a resolute commitment to being an invaluable asset in any 
+                    professional setting. My journey is guided by a relentless pursuit of 
+                    excellence in the field, and I channel my unwavering work ethic into 
+                    honing my skills and staying ahead of industry trends. As a software 
+                    engineer, I thrive on the intricate challenges of coding, showcasing not 
+                    only technical proficiency but also a genuine love for problem-solving. 
+                    My adaptability and eagerness to embrace new technologies make me not 
+                    only hardworking but also exceptionally employable. I am a dynamic force 
+                    in the realm of technology, driven by the intersection of innovation and 
+                    practicality, making me an ideal candidate for any software engineering 
+                    endeavor.
+                </p>
                 <div class="logos">
-                    <i class="devicon-github-original colored" id="gitHub"></i>
+                    <i class="devicon-github-original colored"></i>
                     <i class="devicon-linkedin-plain colored"></i>
                     <i class="devicon-twitter-original colored"></i>
                 </div>
             </div>
         </div>
-        <div id="projects">
-            <h1>My work</h1>
-            <div class="project-div" id="div-one">
-                <h2 class="screenshot">screenshot of project</h2>
-                <div class="project-info">
-                    <div>Project Name</div>
-                    <div id="logo-container">
-                        <i class="devicon-github-original colored" id="gitHub"></i>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
-                    </div>
+    </header>
+    <main>
+        <h2>My work</h2>
+        <div class="projects-container">
+            <div class="project-div" id="one">
+                <div class="screenshot">
+                    <h3>screenshot of project</h3>
                 </div>
-                <div class="project-description">Short description of the project.
-                    Just a couple sentences will do.
+                <div class="project-info">
+                    <h4>Project name</h4>
+                    <div class="logos">
+                        <i class="devicon-github-original colored"></i>
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
+                    </div>
+                    <div class="project-icons"></div>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Short description of the project.
+                        Just a couple sentences will do.
+                    </p>
                 </div>
             </div>
-            <div class="project-div">
-                <h2 class="screenshot" id="div-two">screenshot of project</h2>
-                <div class="project-info">
-                    <div>Project Name</div>
-                    <div id="logo-container">
-                        <i class="devicon-github-original colored" id="gitHub"></i>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
-                    </div>
+            <div class="project-div" id="two">
+                <div class="screenshot">
+                    <h3>screenshot of project</h3>
                 </div>
-                <div class="project-description">Short description of the project.
-                    Just a couple sentences will do.
+                <div class="project-info">
+                    <h4>Project name</h4>
+                    <div class="logos">
+                        <i class="devicon-github-original colored"></i>
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
+                    </div>
+                    <div class="project-icons"></div>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Short description of the project.
+                        Just a couple sentences will do.
+                    </p>
                 </div>
             </div>
-            <div class="project-div">
-                <h2 class="screenshot" id="div-three">screenshot of project</h2>
-                <div class="project-info">
-                    <div>Project Name</div>
-                    <div id="logo-container">
-                        <i class="devicon-github-original colored" id="gitHub"></i>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
-                    </div>
+            <div class="project-div" id="three">
+                <div class="screenshot">
+                    <h3>screenshot of project</h3>
                 </div>
-                <div class="project-description">Short description of the project.
-                    Just a couple sentences will do.
+                <div class="project-info">
+                    <h4>Project name</h4>
+                    <div class="logos">
+                        <i class="devicon-github-original colored"></i>
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
+                    </div>
+                    <div class="project-icons"></div>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Short description of the project.
+                        Just a couple sentences will do.
+                    </p>
+                </div>
+            </div>
+            <div class="project-div" id="four">
+                <div class="screenshot">
+                    <h3>screenshot of project</h3>
+                </div>
+                <div class="project-info">
+                    <h4>Project name</h4>
+                    <div class="logos">
+                        <i class="devicon-github-original colored"></i>
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
+                    </div>
+                    <div class="project-icons"></div>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Short description of the project.
+                        Just a couple sentences will do.
+                    </p>
+                </div>
+            </div>
+            <div class="project-div" id="five">
+                <div class="screenshot">
+                    <h3>screenshot of project</h3>
+                </div>
+                <div class="project-info">
+                    <h4>Project name</h4>
+                    <div class="logos">
+                        <i class="devicon-github-original colored"></i>
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
+                    </div>
+                    <div class="project-icons"></div>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Short description of the project.
+                        Just a couple sentences will do.
+                    </p>
+                </div>
+            </div>
+            <div class="project-div" id="six">
+                <div class="screenshot">
+                    <h3>screenshot of project</h3>
+                </div>
+                <div class="project-info">
+                    <h4>Project name</h4>
+                    <div class="logos">
+                        <i class="devicon-github-original colored"></i>
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>
+                    </div>
+                    <div class="project-icons"></div>
+                </div>
+                <div class="project-description">
+                    <p>
+                        Short description of the project.
+                        Just a couple sentences will do.
+                    </p>
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <div id="contact">
-                <h2>Contact me</h2>
-                <h3>Please get in touch if you think our work could be
-                    mutually beneficial!
-                </h3>
-                <div id="address">
-                    <div class="contact-line">1234 Random Road</div>
-                    <div class="contact-line">Random Town, California
-                        12345
-                    </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <h2>Contact me</h2>
+            <h3>
+                Please get in touch if you think our work
+                could be mutually beneficial!
+            </h3>
+            <div class="contact-details">
+                <div class="address">
+                    <p>1234 Random Road</p>
+                    <p>Random Town, California 12345</p>
                 </div>
-                <div id="phone-email">
-                    <div class="contact-line">555-555-5555</div>
-                    <div class="contact-line">this.is.a.fake.email@email.com
+                <div class="digital-contact">
+                    <div class="phone">
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>phone-outline</title><path d="M20,15.5C18.8,15.5 17.5,15.3 16.4,14.9C16.3,14.9 16.2,14.9 16.1,14.9C15.8,14.9 15.6,15 15.4,15.2L13.2,17.4C10.4,15.9 8,13.6 6.6,10.8L8.8,8.6C9.1,8.3 9.2,7.9 9,7.6C8.7,6.5 8.5,5.2 8.5,4C8.5,3.5 8,3 7.5,3H4C3.5,3 3,3.5 3,4C3,13.4 10.6,21 20,21C20.5,21 21,20.5 21,20V16.5C21,16 20.5,15.5 20,15.5M5,5H6.5C6.6,5.9 6.8,6.8 7,7.6L5.8,8.8C5.4,7.6 5.1,6.3 5,5M19,19C17.7,18.9 16.4,18.6 15.2,18.2L16.4,17C17.2,17.2 18.1,17.4 19,17.4V19Z" /></svg>
+                        <p>555-555-5555</p>
+                    </div>
+                    <div class="e-mail">
+                        <svg height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>email</title><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>
+                        <p>fakeemailaddress@fakegmail.fake</p>
                     </div>
                 </div>
                 <div class="logos">
-                    <i class="devicon-github-original" id="github"></i>
+                    <i class="devicon-github-original"></i>
                     <i class="devicon-linkedin-plain"></i>
                     <i class="devicon-twitter-original"></i>
                 </div>
             </div>
-            <div id="footer-photo"></div>
         </div>
-    </div>
+        <div class="image-div"></div>
+    </footer>
 </body>
 </html>
